@@ -193,7 +193,7 @@
   const ipt = document.querySelector('#search-input')
   const btn = document.querySelector('#search-btn')
   const layer = document.querySelector('#search-layer')
-  const posts = JSON.parse(`[{"title":"","path":"2023/04/20/test/"},{"title":"Hello World","path":"2023/04/20/hello-world/"}]`)
+  const posts = JSON.parse(`[{"title":"Hello World","path":"2023/04/20/hello-world/"},{"title":"","path":"2023/04/20/test/"}]`)
   ipt.addEventListener('keyup', e => {
     if (e.key === 'Enter') {
       handleSearch()
@@ -393,7 +393,11 @@ pre:active {
       </div>
     </div>
     <article class="article-content">
-      <h3 id="浅浅提交一下测试功能"><a href="#浅浅提交一下测试功能" class="headerlink" title="浅浅提交一下测试功能"></a>浅浅提交一下测试功能</h3>
+      <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">title: test</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="浅浅提交一下测试功能"><a href="#浅浅提交一下测试功能" class="headerlink" title="浅浅提交一下测试功能"></a>浅浅提交一下测试功能</h3>
     </article>
     
     <div class="read-nums">
