@@ -18,21 +18,7 @@
   <script>
     document.title = `JNInRain's Blog——小站首页`
   </script>
-       <meta charset="UTF-8">
-    <title>live2d-demo</title>
-    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-    <!-- Live2DCubismCore -->
-    <script src="https://cdn.jsdelivr.net/gh/litstronger/live2d-moc3@master/js/frame/live2dcubismcore.min.js"></script>
-    <!-- Include Pixi. -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.6.1/pixi.min.js"></script>
-    <!-- Include Cubism Components. -->
-    <script src="https://cdn.jsdelivr.net/gh/litstronger/live2d-moc3@master/js/live2dcubismframework.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/litstronger/live2d-moc3@master/js/live2dcubismpixi.js"></script>
-    <!-- User's Script -->
-    <script src="https://cdn.jsdelivr.net/gh/litstronger/live2d-moc3@master/js/l2d.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/litstronger/live2d-moc3@master/js/main.js"></script>
-    <style>
-    </style>
+
 <meta name="generator" content="Hexo 6.3.0"></head>
 
 <style>
@@ -208,7 +194,7 @@
   const ipt = document.querySelector('#search-input')
   const btn = document.querySelector('#search-btn')
   const layer = document.querySelector('#search-layer')
-  const posts = JSON.parse(`[{"title":"Hello World","path":"2023/04/20/hello-world/"},{"title":"test","path":"2023/04/20/test/"}]`)
+  const posts = JSON.parse(`[{"title":"test","path":"2023/04/20/test/"},{"title":"Hello World","path":"2023/04/20/hello-world/"}]`)
   ipt.addEventListener('keyup', e => {
     if (e.key === 'Enter') {
       handleSearch()
@@ -446,24 +432,7 @@
 
   window.loadImageFn = loadImage;
 </script>
-{% block live2d %}
-  <div class="Canvas"  id="L2dCanvas"></div>
-<script>
-    var config = {
-        width: 800,
-        height: 600,
-        left: '850px',
-        bottom: '-100px',
-        basePath: 'https://cdn.jsdelivr.net/gh/JiangNanInRain/AzurLaneL2DViewer@aaa/assets/',
-        //role: 'Tiger',
-        role: 'aierdeliqi_4',
-        // background: 'https://cdn.jsdelivr.net/gh/JiangNanInRain/AzurLaneL2DViewer@gh-page/assets/bg/bg_church_jp.png',
-        opacity: 1,
-        mobile: false
-    }
-    var v = new Viewer(config); 
-</script>
-{% endblock %} </div>
+ </div>
       <div class="main-right-wrapper"><div class="main-right">
   <div class="main-right--board">
     <div class="main-right--title">
@@ -639,7 +608,5 @@
       // $('.main-container').fadeIn()
     })
   </script>
-{% block live2d %}{% endblock %}
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":200,"height":400},"mobile":{"show":true},"react":{"opacity":1},"log":false});</script></body>
-
 </html>
