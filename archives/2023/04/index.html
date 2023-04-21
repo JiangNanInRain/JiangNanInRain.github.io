@@ -18,7 +18,21 @@
   <script>
     document.title = `JNInRain's Blog——小站首页`
   </script>
-   
+       <meta charset="UTF-8">
+    <title>live2d-demo</title>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- Live2DCubismCore -->
+    <script src="https://cdn.jsdelivr.net/gh/litstronger/live2d-moc3@master/js/frame/live2dcubismcore.min.js"></script>
+    <!-- Include Pixi. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.6.1/pixi.min.js"></script>
+    <!-- Include Cubism Components. -->
+    <script src="https://cdn.jsdelivr.net/gh/litstronger/live2d-moc3@master/js/live2dcubismframework.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/litstronger/live2d-moc3@master/js/live2dcubismpixi.js"></script>
+    <!-- User's Script -->
+    <script src="https://cdn.jsdelivr.net/gh/litstronger/live2d-moc3@master/js/l2d.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/litstronger/live2d-moc3@master/js/main.js"></script>
+    <style>
+    </style>
 <meta name="generator" content="Hexo 6.3.0"></head>
 
 <style>
@@ -162,25 +176,25 @@
     <div class="header-right">
       <ul class="header-menu">
         <li>
-          <a href="http://example.com/">
+          <a href="https://jninrain.club/">
             <i class="header-menu--icon iconfont icon-shouye"></i>
             <span class="header-menu--span">首页</span>
           </a>
         </li>
         <li>
-          <a href="http://example.com/log">
+          <a href="https://jninrain.club/log">
             <i class="header-menu--icon iconfont icon-rizhi"></i>
             <span class="header-menu--span">日志</span>
           </a>
         </li>
         <li>
-          <a href="http://example.com/link">
+          <a href="https://jninrain.club/link">
             <i class="header-menu--icon iconfont icon-youqinglianjie"></i>
             <span class="header-menu--span">友情链接</span>
           </a>
         </li>
         <li>
-          <a href="http://example.com/about">
+          <a href="https://jninrain.club/about">
             <i class="header-menu--icon iconfont icon-guanyuwomen"></i>
             <span class="header-menu--span">关于我</span>
           </a>
@@ -290,30 +304,9 @@
         </li>
       
         <li>
-          <a href="/log">
-            <span class="header-menu--span">个人日志</span>
-            <i class="header-menu--icon iconfont icon-rizhi"></i>
-          </a>
-        </li>
-      
-        <li>
-          <a href="/link">
+          <a href="/friends">
             <span class="header-menu--span">友情链接</span>
             <i class="header-menu--icon iconfont icon-youqinglianjie"></i>
-          </a>
-        </li>
-      
-        <li>
-          <a href="/about">
-            <span class="header-menu--span">关于自己</span>
-            <i class="header-menu--icon iconfont icon-guanyuwomen"></i>
-          </a>
-        </li>
-      
-        <li>
-          <a href="/tools">
-            <span class="header-menu--span">我的工具</span>
-            <i class="header-menu--icon iconfont icon-gongju"></i>
           </a>
         </li>
       
@@ -332,7 +325,7 @@
       </p>
       <p class="main-left--subtitle">
         <span>最近动态：</span>
-        <span>今天</span>
+        <span>昨天</span>
       </p>
       <p class="main-left--subtitle">
         <span>上线时间：</span>
@@ -454,7 +447,25 @@
   }
 
   window.loadImageFn = loadImage;
-</script> 
+</script>
+{% block live2d %}
+  <div class="Canvas"  id="L2dCanvas"></div>
+<script>
+    var config = {
+        width: 800,
+        height: 600,
+        left: '850px',
+        bottom: '-100px',
+        basePath: 'https://cdn.jsdelivr.net/gh/JiangNanInRain/AzurLaneL2DViewer@aaa/assets/',
+        //role: 'Tiger',
+        role: 'aierdeliqi_4',
+        // background: 'https://cdn.jsdelivr.net/gh/JiangNanInRain/AzurLaneL2DViewer@gh-page/assets/bg/bg_church_jp.png',
+        opacity: 1,
+        mobile: false
+    }
+    var v = new Viewer(config); 
+</script>
+{% endblock %} 
 </div>
       <div class="main-right-wrapper"><div class="main-right">
   <div class="main-right--board">
@@ -631,5 +642,7 @@
       // $('.main-container').fadeIn()
     })
   </script>
+{% block live2d %}{% endblock %}
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":200,"height":400},"mobile":{"show":true},"react":{"opacity":1},"log":false});</script></body>
+
 </html>

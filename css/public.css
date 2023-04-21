@@ -265,6 +265,7 @@ input {
   font-weight: bold;
   margin: 0 30px;
   text-align: center;
+  padding: 30px 100px;
 }
 .index-article--content > a:hover {
   text-decoration: underline;
