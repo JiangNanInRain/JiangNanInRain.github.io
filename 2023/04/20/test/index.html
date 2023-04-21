@@ -168,21 +168,15 @@
           </a>
         </li>
         <li>
-          <a href="https://jninrain.club/log">
+          <a href="https://jninrain.club/logs">
             <i class="header-menu--icon iconfont icon-rizhi"></i>
             <span class="header-menu--span">日志</span>
           </a>
         </li>
         <li>
-          <a href="https://jninrain.club/link">
+          <a href="https://jninrain.club/friends">
             <i class="header-menu--icon iconfont icon-youqinglianjie"></i>
             <span class="header-menu--span">友情链接</span>
-          </a>
-        </li>
-        <li>
-          <a href="https://jninrain.club/about">
-            <i class="header-menu--icon iconfont icon-guanyuwomen"></i>
-            <span class="header-menu--span">关于我</span>
           </a>
         </li>
       </ul>
@@ -290,9 +284,23 @@
         </li>
       
         <li>
+          <a href="/logs">
+            <span class="header-menu--span">个人日志</span>
+            <i class="header-menu--icon iconfont icon-rizhi"></i>
+          </a>
+        </li>
+      
+        <li>
           <a href="/friends">
             <span class="header-menu--span">友情链接</span>
             <i class="header-menu--icon iconfont icon-youqinglianjie"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a href="/about">
+            <span class="header-menu--span">关于自己</span>
+            <i class="header-menu--icon iconfont icon-guanyuwomen"></i>
           </a>
         </li>
       
@@ -513,7 +521,7 @@ pre:active {
   }
 
   setOperateItem()
-  const musics = JSON.parse(`[{"name":"三葉のテーマ","artist":"RADWIMPS","url":"music/三葉のテーマ.mp3","cover":"https://y.qq.com/music/photo_new/T002R300x300M0000007oL0R1hDyxV_1.jpg?w=500&h=500"},{"name":"安河桥","artist":"宋冬野","url":"http://ting6.yymp3.net:82/new25/songdongye/11.mp3","cover":"https://img2.baidu.com/it/u=1260056724,1076343118&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"},{"name":"卡布达","artist":"暂无","url":"music/kabuda.mp3","cover":"https://img2.baidu.com/it/u=705831265,2862720033&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"}]`)
+  const musics = JSON.parse(`[{"name":"三葉のテーマ","artist":"RADWIMPS","url":"music/三葉のテーマ.mp3","cover":"https://y.qq.com/music/photo_new/T002R300x300M0000007oL0R1hDyxV_1.jpg?w=500&h=500"}]`)
   const ap = new APlayer({
     container: document.querySelector('#aplayer'),
     audio: musics,
