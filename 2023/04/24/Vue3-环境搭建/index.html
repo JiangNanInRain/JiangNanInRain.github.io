@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>JNInRain&#39;s Blog——关于我 | 主页</title>
+  <title>JNInRain&#39;s Blog——Vue3-环境搭建 | 主页</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="shortcut icon" href="/imgs/shortcut-icon.ico" type="image/x-icon">
   <link rel="stylesheet" href="/css/public.css" />
@@ -16,7 +16,7 @@
 
   <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
   <script>
-    document.title = `JNInRain's Blog——关于我`
+    document.title = `JNInRain's Blog——Vue3-环境搭建`
   </script>
 
 <meta name="generator" content="Hexo 6.3.0"></head>
@@ -347,29 +347,44 @@ pre:active {
 
 <div class="article-container">
   <div class="article">
-    <h1 class="article-title">关于我</h1>
+    <h1 class="article-title">Vue3-环境搭建</h1>
     <div class="article-info">
       <div class="article-info--item">
         <div class="article-info--info">
           
+          <div class="article-info--categories">
+            <span>分类：</span>
+            
+          </div>
           
-          <p class="article-info--date">日期：2023-04-24 01:59:04</p>
+          
+          <div class="article-info--tags">
+            <span>标签：</span>
+            
+          </div>
+          
+          <p class="article-info--date">日期：2023-04-24 01:58:31</p>
         </div>
-        <img src="https://github.com/JiangNanInRain/JiangNanInRain.github.io/blob/main/imgs/about.jpeg?raw=true" alt="" class="article-cover">
+        <img src="https://github.com/JiangNanInRain/JiangNanInRain.github.io/blob/main/imgs/friend.jpeg?raw=true" alt="" class="article-cover">
       </div>
     </div>
     <article class="article-content">
-      <ul>
-<li>热爱生活，积极向上。</li>
-<li>钟情于原神:uid165406994</li>
-<li>是前端小萌新</li>
-</ul>
+      <h2 id="安装nodejs方式有很多种"><a href="#安装nodejs方式有很多种" class="headerlink" title="安装nodejs方式有很多种"></a><a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=%E5%AE%89%E8%A3%85nodejs&spm=1001.2101.3001.7020">安装nodejs</a>方式有很多种</h2><ol>
+<li><strong>官网下载（不做介绍）</strong></li>
+<li><strong>NVM安装(可以方便切换node.js的版本)</strong></li>
+</ol>
+<h3 id="一、下载nvm安装包"><a href="#一、下载nvm安装包" class="headerlink" title="一、下载nvm安装包"></a>一、下载nvm安装包</h3><p>官方下载地址：<a target="_blank" rel="noopener" href="https://github.com/coreybutler/nvm-windows/releases">https://github.com/coreybutler/nvm-windows/releases</a></p>
+<p>直接下载nvm-setup.exe，执行安装[^ 他会自动给你配置环境变量]</p>
+<h3 id="二、使用nvm"><a href="#二、使用nvm" class="headerlink" title="二、使用nvm"></a>二、使用nvm</h3><p>win+r打开cmd，输入nvm -v查看是否安装成功</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">nvm ls  						 // 查看目前已经安装的版本</span><br><span class="line">nvm install 10.5.0 		 		// 安装指定的版本的nodejs</span><br><span class="line">nvm use 10.5.0 			 		// 使用指定版本的nodejs</span><br><span class="line">nvm list available 				//显示可下载版本的部分列表</span><br><span class="line">nvm uninstall 10.5.0			//删除已安装的指定版本，语法与install类似</span><br><span class="line">nvm alias 						//给不同的版本号添加别名</span><br><span class="line">nvm unalias					 	//删除已定义的别名</span><br><span class="line">nvm reinstall-packages &lt;version&gt;//在当前版本node环境下，重新全局安装指定版本号的npm包</span><br><span class="line">nvm current 				//显示当前的版本</span><br></pre></td></tr></table></figure>
+
+<p>详情见博客&#x3D;&gt;<a target="_blank" rel="noopener" href="https://blog.csdn.net/dream2222222222/article/details/125290664">https://blog.csdn.net/dream2222222222/article/details/125290664</a></p>
 
     </article>
     
     <div class="read-nums">
       <!-- id 将作为查询条件 -->
-      <span id="about.html" class="leancloud_visitors" data-flag-title="Your Article Title">
+      <span id="2023/04/24/Vue3-环境搭建/" class="leancloud_visitors" data-flag-title="Your Article Title">
         <em class="post-meta-item-text">浏览量</em>
         <i class="leancloud-visitors-count"></i>
       </span>
@@ -385,8 +400,23 @@ pre:active {
     <div class="article-catelogue--wrapper">
       <div class="catelogue catelogue-1">
         <h3>目录</h3>
-        
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85nodejs%E6%96%B9%E5%BC%8F%E6%9C%89%E5%BE%88%E5%A4%9A%E7%A7%8D"><span class="toc-number">1.</span> <span class="toc-text">安装nodejs方式有很多种</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E4%B8%8B%E8%BD%BDnvm%E5%AE%89%E8%A3%85%E5%8C%85"><span class="toc-number">1.1.</span> <span class="toc-text">一、下载nvm安装包</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E4%BD%BF%E7%94%A8nvm"><span class="toc-number">1.2.</span> <span class="toc-text">二、使用nvm</span></a></li></ol></li></ol>
       </div>
+      
+        <div class="catelogue catelogue-2">
+          
+            <p>
+              <span>上一篇：</span>
+              <a href="/2023/04/24/Vite构建项目/">Vite构建项目</a>
+            </p>
+           
+          
+            <p>
+              <span>下一篇</span>
+              <a href="/2023/04/20/test/">test</a>
+            </p>
+          
+        </div>
       
     </div>
   </div>
@@ -406,7 +436,7 @@ pre:active {
     recordIP: config.recordIP,
     visitor: config.visitor,
     enableQQ: config.enableQQ,
-    path: 'about.html'
+    path: '2023/04/24/Vue3-环境搭建/'
   })
 </script>
 

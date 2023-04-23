@@ -176,7 +176,7 @@
   const ipt = document.querySelector('#search-input')
   const btn = document.querySelector('#search-btn')
   const layer = document.querySelector('#search-layer')
-  const posts = JSON.parse(`[{"title":"Hello World","path":"2023/04/20/hello-world/"},{"title":"test","path":"2023/04/20/test/"}]`)
+  const posts = JSON.parse(`[{"title":"Vue3-环境搭建","cover":"https://github.com/JiangNanInRain/JiangNanInRain.github.io/blob/main/imgs/friend.jpeg?raw=true","path":"2023/04/24/Vue3-环境搭建/"},{"title":"Vite构建项目","cover":"https://github.com/JiangNanInRain/JiangNanInRain.github.io/blob/main/imgs/friend.jpeg?raw=true","path":"2023/04/24/Vite构建项目/"},{"title":"Hello World","path":"2023/04/20/hello-world/"},{"title":"test","path":"2023/04/20/test/"}]`)
   ipt.addEventListener('keyup', e => {
     if (e.key === 'Enter') {
       handleSearch()
@@ -303,15 +303,15 @@
       </h5>
       <p class="main-left--subtitle">
         <span>文章数目：</span>
-        <span>2 篇</span>
+        <span>4 篇</span>
       </p>
       <p class="main-left--subtitle">
         <span>最近动态：</span>
-        <span>昨天</span>
+        <span>今天</span>
       </p>
       <p class="main-left--subtitle">
         <span>上线时间：</span>
-        <span>3天</span>
+        <span>5天</span>
       </p>
       <p class="main-left--subtitle">
         <span>当前版本：</span>
@@ -326,6 +326,21 @@
 
 <div class="index">
   <div class="index-left">
+    
+      <div class="index-article">
+        <!-- <img class="index-article--cover" src="https://github.com/JiangNanInRain/JiangNanInRain.github.io/blob/main/imgs/friend.jpeg?raw=true" alt=""> -->
+        <div class="index-article--box">
+          <img class="index-article--cover" data-cover="https://github.com/JiangNanInRain/JiangNanInRain.github.io/blob/main/imgs/friend.jpeg?raw=true" alt="">
+        </div>
+        <div class="index-article--content">
+          <a href="/2023/04/24/Vite%E6%9E%84%E5%BB%BA%E9%A1%B9%E7%9B%AE/">Vite构建项目 </a>
+          <div>
+            
+            
+          </div>
+          <div class="bg"></div>
+        </div>
+      </div>
     
       <div class="index-article">
         <!-- <img class="index-article--cover" src="/imgs/default-cover.webp" alt=""> -->
@@ -344,6 +359,21 @@
     
   </div>
   <div class="index-center">
+    
+      <div class="index-article">
+        <!-- <img class="index-article--cover" data-cover="https://github.com/JiangNanInRain/JiangNanInRain.github.io/blob/main/imgs/friend.jpeg?raw=true" src="https://github.com/JiangNanInRain/JiangNanInRain.github.io/blob/main/imgs/friend.jpeg?raw=true" alt=""> -->
+        <div class="index-article--box">
+          <img class="index-article--cover" data-cover="https://github.com/JiangNanInRain/JiangNanInRain.github.io/blob/main/imgs/friend.jpeg?raw=true" alt="">
+        </div>
+        <div class="index-article--content">
+          <a href="/2023/04/24/Vue3-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">Vue3-环境搭建 </a>
+          <div>
+            
+            
+          </div>
+          <div class="bg"></div>
+        </div>
+      </div>
     
       <div class="index-article">
         <!-- <img class="index-article--cover" data-cover="" src="/imgs/default-cover.webp" alt=""> -->
@@ -365,7 +395,7 @@
     <div class="index-right-wrapper">
       
       
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/04/">2023年04月</a><span class="archive-list-count">2</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/04/">2023年04月</a><span class="archive-list-count">4</span></li></ul>
     </div>
   </div>
 </div>
